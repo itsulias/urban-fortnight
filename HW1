@@ -1,0 +1,37 @@
+#include <iostream> 
+#include <string> 
+
+using namespace std; 
+// ф-я определяет знак числа 
+string define_sign(int num) 
+{ 
+string sign; 
+if (num > 0) 
+sign = "positive"; 
+else { 
+if (num < 0) 
+sign = "negative"; 
+else 
+sign = "zero"; 
+} 
+return sign; 
+} 
+
+
+
+#include <iostream> 
+
+using namespace std; 
+
+// ф-я ищет корни уравнения 
+int roots(int a, int b, int c) 
+{ 
+return (c - b) / a; 
+} 
+
+int main() 
+{ 
+int a, b, c; 
+cin >> a >> b >> c; 
+cout << roots(a, b, c); 
+}
