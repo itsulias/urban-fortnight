@@ -1,0 +1,61 @@
+Задание 1 
+
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    int dividend;
+    int divider;
+    int reminder;
+ 
+    cout << "Enter dividend and divider";
+    cin >> dividend >> divider;
+ 
+    cout << endl;
+ 
+    if ( divider != 0 )
+    {
+        reminder = dividend / divider;
+
+        cout << "Number after division is " << dividend << " and reminder is " << reminder << endl;
+    }
+    else
+    {
+        cout << "Can't be null" << endl;
+    }
+ 
+    return 0;
+}
+
+Задание 2 
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string login = "correct_login";
+    string password = "qwerty123";
+    string log1;
+    string pass;
+   
+    {
+       
+        cin >> log1;
+        if (log1 == login)
+        {
+            cout << "Логин принят. Введите пароль: " << endl;
+            cin >> pass;
+            if (pass == password)
+            {
+                cout << "Доступ разрешен!";
+                return 0;
+            }
+            else
+                cout << "Доступ запрещен!";
+                return 0;
+        }
+    }
+}
